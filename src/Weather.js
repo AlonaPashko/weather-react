@@ -13,7 +13,7 @@ export default function Weather(props) {
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpy_wzTJquWgYdzw87xk9_ulbbAbu4gAkgMC4R5lKAHVZznHqqEC8TVNtWTjtEE1nA748&usqp=CAU"
   };
   return (
-    <div className="Weather">
+<div className="Weather">
       <form className="mb-3" id="search-form">
         <div className="row">
           <div className="col-6">

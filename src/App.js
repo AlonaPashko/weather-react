@@ -1,14 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-import Weather from "./Weather";
 
-function App() {
-  let city = "Lisbon";
+import "./App.css";
+import Weather from "./Weather.js";
+
+export default function App() {
   return (
     <div className="App">
-     <Weather />
+      <Weather
+        city="Wejherowo"
+        temperature={25}
+        date="Friday, 18:01"
+        wind={16}
+        humidity={77}
+        description="Cloudy"
+      />
     </div>
   );
 }
-
-export default App;
