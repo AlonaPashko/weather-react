@@ -13,7 +13,7 @@ export default function App() {
         humidity={77}
         description="Cloudy"
       />
-      <p><a href="https://github.com/AlonaPashko/weather-react">Open source code</a> by Alona Pashko</p>
+      <p><a href="https://github.com/AlonaPashko/weather-react" target="_blanck">Open source code</a> by Alona Pashko</p>
     </div>
   );
 }
