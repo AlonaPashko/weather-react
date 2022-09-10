@@ -1,7 +1,9 @@
 import React from "react";
 import "./Weather.css";
+import axios from "axios";
 
 export default function Weather(props) {
+  
   let weatherData = {
     city: props.city,
     temperature: props.temperature,
