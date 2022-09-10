@@ -6,12 +6,7 @@ function App() {
   let city = "Lisbon";
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>
-          Hello, react {city}!
-        </h1>
-       <Weather city = "Tokyo"/>
-      </header>
+     <Weather />
     </div>
   );
 }
