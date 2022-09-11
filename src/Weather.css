@@ -1,14 +1,14 @@
 
 .Weather {
-  margin: 30px auto;
   border: 0.5px solid #9ba3eb;
   border-radius: 10px;
-  font-weight: 700;
-  padding: 16px;
   font-family: "Familjen Grotesk", sans-serif;
+  font-weight: 700;
+  margin: 30px auto;
+  padding: 16px;
 }
 .Weather .city {
-    color: #242f9b;
+    color: #1a28a3;
     display: block;
     font-size: 42px;
     font-weight: 100;
@@ -19,29 +19,30 @@
   }
   .Weather .temperature {
     color: #242f9b;
+    display: block;
     font-size: 54px;
     font-weight: 400;
     line-height: 1;
-    text-align: center;
-    display: block;
     margin: 10px;
+    text-align: center;
   }
   .Weather .date {
-    text-align: center;
-    color: #9ba3eb;
-    font-style: italic;
+    color: #5c6bec;
     font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
   }
   .Weather .units {
     color: #242f9b;
     display: block;
-    position: relative;
     font-size: 18px;
-    text-align: center;
     font-weight: 200;
-    top: -90px;
-    right: -64px;
     line-height: 1;
+    position: relative;
+    right: -64px;
+    text-align: center;
+    top: -90px;
   }
   .Weather .unit-link {
     color: #242f9b;
@@ -53,9 +54,10 @@
     text-decoration: none;
   }
   .Weather .left-panel {
-    font-style: italic;
+    color: #5c6bec;
     font-size: 20px;
-    color: #9ba3eb;
+    font-style: italic;
+    font-weight: 500;
   }
   .Weather li {
     list-style: none;
