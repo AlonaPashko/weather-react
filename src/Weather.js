@@ -15,7 +15,7 @@ export default function Weather(props) {
   };
   return (
 <div className="Weather">
-      <form className="mb-3" id="search-form">
+      <form className="mb-3">
         <div className="row">
           <div className="col-6">
             <input
@@ -40,12 +40,8 @@ export default function Weather(props) {
           </div>
         </div>
       </form>
-      <div className="city">
-        <h1> {weatherData.city}</h1>
-      </div>
-      <div className="temperature">
-        <strong> {weatherData.temperature}</strong>
-      </div>
+      <div className="city">{weatherData.city}</div>
+      <div className="temperature">{weatherData.temperature}</div>
       <div className="date">Last updated: {weatherData.date}</div>
       <span className="units">
         <a href="/" className="unit-link">
@@ -68,8 +64,9 @@ export default function Weather(props) {
           </div>
         </div>
         <div className="col">
-          <div className="main-icon">
-            <img src={weatherData.imgUrl} alt="clouds-icon" width="90px" />
+          <div className="weather-icon">
+            <img src={weatherData.imgUrl} alt="clouds-icon" width="100px"/>
+            {/* make a component with animation, after a standart icon */}
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ export default function App() {
     <div className="App">
       <div className="container">
       <Weather
-        city="Wejherowo"
+        city="New York"
         temperature={25}
         date="Friday, 18:01"
         wind={16}

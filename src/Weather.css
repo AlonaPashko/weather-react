@@ -1,14 +1,11 @@
+
 .Weather {
-  font-family: "Familjen Grotesk", sans-serif;
   margin: 30px auto;
-  padding: 10 px;
-  border: 0.5px solid;
-  border-color: #6d8b74;
+  border: 0.5px solid #9ba3eb;
   border-radius: 10px;
   font-weight: 700;
-  max-width: 600px;
-  margin: 30px auto;
-  padding: 20px;
+  padding: 16px;
+  font-family: "Familjen Grotesk", sans-serif;
 }
 .Weather .city {
     color: #242f9b;
@@ -20,15 +17,6 @@
     padding: auto;
     text-align: center;
   }
-  .Weather .date {
-    text-align: center;
-    color: #9ba3eb;
-    font-style: italic;
-    font-size: 20px;
-  }
-  .Weather .temp-degree {
-    text-align: center;
-  }
   .Weather .temperature {
     color: #242f9b;
     font-size: 54px;
@@ -36,15 +24,24 @@
     line-height: 1;
     text-align: center;
     display: block;
+    margin: 10px;
+  }
+  .Weather .date {
+    text-align: center;
+    color: #9ba3eb;
+    font-style: italic;
+    font-size: 20px;
   }
   .Weather .units {
     color: #242f9b;
     display: block;
     position: relative;
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
-    top: -86px;
+    font-weight: 200;
+    top: -90px;
     right: -64px;
+    line-height: 1;
   }
   .Weather .unit-link {
     color: #242f9b;
@@ -56,8 +53,6 @@
     text-decoration: none;
   }
   .Weather .left-panel {
-    position: relative;
-    left: -10px;
     font-style: italic;
     font-size: 20px;
     color: #9ba3eb;
@@ -68,14 +63,8 @@
     padding: 0;
     text-align: left;
   }
-  .Weather .main-icon {
-    font-size: 20px;
+  .Weather .weather-icon {
+    float: right;
+    margin-right: 60px;
   }
-  .Weather .row {
-    color: #242f9b;
-  }
-  .Weather .col {
-    text-align: center;
-    font-style: italic;
-  }
-  
+ 
