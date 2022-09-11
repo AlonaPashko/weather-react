@@ -13,7 +13,10 @@ export default function App() {
         humidity={77}
         description="Cloudy"
       />
-      <p>This project was coded by Alona Pashko and is <a href="https://github.com/AlonaPashko/weather-react" target="_blanck">open-sourced on GitHub</a> and hosted on Netlify</p>
+      <footer>This project was coded by{" "} 
+        <a href="https://www.linkedin.com/in/alona-pashko/" target="blank">Alona Pashko</a> 
+        {" "}and is <a href="https://github.com/AlonaPashko/weather-react" target="_blanck">open-sourced on GitHub</a> 
+        {" "}and <a href="https://shimmering-kangaroo-954530.netlify.app/" target="_blank">hosted on Netlify </a></footer>
     </div>
   );
 }
