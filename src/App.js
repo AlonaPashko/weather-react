@@ -7,14 +7,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-      <Weather
-        city="New York"
-        temperature={25}
-        date="Friday, 18:01"
-        wind={16}
-        humidity={77}
-        description="Cloudy"
-      />
+      <Weather defaultCity="Wejherowo"/>
       <footer>This project was coded by{" "} 
         <a href="https://www.linkedin.com/in/alona-pashko/" target="blank" rel="noopener noreferrer">Alona Pashko</a> 
         {" "}and is <a href="https://github.com/AlonaPashko/weather-react" rel="noopener noreferrer" target="_blank">open-sourced on GitHub</a> 
