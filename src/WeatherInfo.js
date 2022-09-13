@@ -6,7 +6,7 @@ export default function WeatherInfo(props){
          <div className="city">{props.data.city}</div>
             <div className="temperature">{Math.round(props.data.temperature)}</div>
             <div className="date">
-<FormattedDate />
+<FormattedDate date={props.data.date}/>
             </div>
             <span className="units">
               <a href="/" className="unit-link">
@@ -30,7 +30,7 @@ export default function WeatherInfo(props){
               </div>
               <div className="col">
                 <div className="weather-icon">
-                  Weather-img
+                 <img src={props.data.iconUrl} alt="weather-icon" />
                   {/* make a component with animation, after a standart icon */}
                 </div>
               </div>
