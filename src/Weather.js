@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import "./Weather.css";
 import axios from "axios";
+import "./WeatherInfo.js";
+import WeatherInfo from "./WeatherInfo.js";
 
 export default function Weather(props) {
   const [ready, setReady] = useState(false);
@@ -14,7 +16,7 @@ export default function Weather(props) {
     city: response.data.name,
     humidity: response.data.main.humidity,
     description: response.data.weather[0].description,
-    date: "Wednesday 07:00"
+    date: new Date(response.data.dt * 1000)
   });
   }
   if(weatherData.ready){
@@ -44,38 +46,9 @@ export default function Weather(props) {
                   </button>
                 </div>
               </div>
+              <WeatherInfo data={weatherData}/>
             </form>
-            <div className="city">{weatherData.city}</div>
-            <div className="temperature">{Math.round(weatherData.temperature)}</div>
-            <div className="date">{weatherData.date}</div>
-            <span className="units">
-              <a href="/" className="unit-link">
-                °C{" "}
-              </a>{" "}
-              |
-              <a href="/" className="unit-link">
-                {" "}
-                °F
-              </a>{" "}
-            </span>
-            <div className="row">
-              <div className="col">
-                <div className="left-panel">
-                  <ul>
-                    <li className="text-capitalize">{weatherData.description}</li>
-                    <li>Wind: {weatherData.wind} m/h</li>
-                    <li>Humidity: {weatherData.humidity} %</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col">
-                <div className="weather-icon">
-                  Weather-img
-                  {/* make a component with animation, after a standart icon */}
-                </div>
-              </div>
-            </div>
-          </div>
+           </div>
         );
   }
 else{
