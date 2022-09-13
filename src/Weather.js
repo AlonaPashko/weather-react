@@ -40,7 +40,7 @@ setCity(event.target.value);
       <div className="Weather">
             <form className="mb-3" onSubmit={handleSubmit}>
               <div className="row">
-                <div className="col-6">
+                <div className="col-9">
                   <input
                     type="search"
                     placeholder="Enter your city"
@@ -56,11 +56,6 @@ setCity(event.target.value);
                     value="Search"
                     className="form-control btn btn-primary shadow-sm w-100"
                   />
-                </div>
-                <div className="col-3">
-                  <button type="button" className="btn btn-primary shadow-sm w-100">
-                    Current
-                  </button>
                 </div>
               </div>
               <WeatherInfo data={weatherData}/>
