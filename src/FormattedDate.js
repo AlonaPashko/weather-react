@@ -1,4 +1,5 @@
 import React from "react";
+import "./FormattedDate.css";
 
 export default function FormattedDate(props){
     
@@ -15,6 +16,7 @@ export default function FormattedDate(props){
         minutes = `0${minutes}`;
     }
     return (<div className="FormattedDate">
-        {day}, {hours}:{minutes}
-    </div>);
+ {day}, {hours}:{minutes}
+    </div>
+    );
     }
