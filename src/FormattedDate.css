@@ -6,3 +6,8 @@
     margin-bottom: 20px;
     text-align: center;
   }
+  @media (max-width: 600px){
+.FormattedDate {
+  font-size: 16px;
+}
+  }
